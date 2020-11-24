@@ -18,6 +18,7 @@
 
   @include e(description) {
     max-width: 350px;
+    padding-bottom: 15px;
   }
   @media #{$break--m} {
     background: 50% 100% url('#{$path--rel}/bg-curvy-desktop.svg') no-repeat;
