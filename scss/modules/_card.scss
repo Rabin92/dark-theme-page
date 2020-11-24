@@ -1,0 +1,112 @@
+// ==========================================================================
+// Card
+// ==========================================================================
+main {
+  @extend %card;
+}
+
+.card {
+  @include e(sec) {
+    margin-top: em(60px);
+  }
+
+  @include e(title) {
+    line-height: em(14px);
+  }
+
+  @include e(figure) {
+  }
+
+  @include m(marg-bttm) {
+    margin-bottom: em(150px);
+  }
+
+  @include e(link) {
+    color: $aquamarine-blue;
+    text-decoration: underline;
+    position: relative;
+    top: em(20px);
+    &::after {
+      content: url(#{$path--rel}/icon-arrow.svg);
+      padding-left: em(10px);
+      position: absolute;
+      top: em(1px);
+    }
+    &:hover {
+      color: $white;
+    }
+  }
+
+  @include e(avatar) {
+    border-radius: $br--round;
+    height: em(30px);
+  }
+
+  @include e(flex) {
+    @include flexy($a-items: null);
+    margin-top: em(30px);
+
+    @include m(item) {
+      margin-left: em(10px);
+    }
+  }
+
+  @include e(name) {
+    line-height: em(10px);
+  }
+
+  @include m(three) {
+    @media #{$break--s} {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: em(20px);
+    }
+    @media #{$break--m} {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    padding-top: em(150px);
+    padding-bottom: em(250px);
+  }
+
+  @include e(body) {
+    border-radius: $br--radius;
+    margin-bottom: em(30px);
+    position: relative;
+
+    @include m(align-left) {
+      text-align: left;
+    }
+
+    @include m(center) {
+      @media #{$break--m} {
+        align-self: center;
+      }
+    }
+
+    @include m(color) {
+      background-color: $color-secondary;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      padding: em(16px);
+    }
+  }
+
+  @include e(quote) {
+    height: em(18px);
+    position: absolute;
+    top: em(-15px);
+    left: em(3px);
+  }
+}
+
+.grid {
+  @media #{$break--s} {
+    display: grid;
+    grid-gap: em(10px) em(80px);
+    @include m(sec-one) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include m(sec-two) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

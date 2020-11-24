@@ -1,0 +1,41 @@
+// ==========================================================================
+// Intro
+// ==========================================================================
+
+.intro {
+  background: url('#{$path--rel}/bg-curvy-mobile.svg') no-repeat;
+  background-position: bottom center;
+  background-size: 100%;
+  @include flexy($f-dir: column);
+
+  @include e(title) {
+    max-width: 400px;
+  }
+
+  @include e(img) {
+    max-width: 300px;
+  }
+
+  @include e(description) {
+    max-width: 350px;
+  }
+  @media #{$break--m} {
+    background: 50% 100% url('#{$path--rel}/bg-curvy-desktop.svg') no-repeat;
+    background-size: 100%;
+
+    @include e(title) {
+      max-width: 600px;
+    }
+
+    @include e(img) {
+      max-width: 550px;
+    }
+
+    @include e(description) {
+      max-width: 450px;
+    }
+  }
+
+  padding: $gutters;
+  text-align: $text--center;
+}

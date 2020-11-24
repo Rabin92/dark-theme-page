@@ -1,0 +1,47 @@
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+.main-footer {
+  background-color: $color-footer;
+  padding-top: em(230px);
+  @media #{$break--l} {
+    padding-top: em(150px);
+  }
+}
+
+.footer {
+  padding: $gutters;
+  @media #{$break--l} {
+    @include flexy($j-content: space-between, $a-items: null);
+  }
+
+  @include e(contact) {
+    padding-top: em(10px);
+  }
+
+  @include e(title) {
+    margin: 2000px 15px;
+  }
+
+  @include e(social) {
+    @include flexy($j-content: center, $a-items: center);
+    @media #{$break--l} {
+      @include flexy($a-items: flex-start);
+      height: initial;
+    }
+    height: 15vh;
+  }
+
+  @include e(body) {
+    margin-top: em(50px);
+    line-height: em(32px);
+    @media #{$break--l} {
+      margin-top: initial;
+    }
+  }
+
+  @include e(link) {
+    @extend %link;
+  }
+}

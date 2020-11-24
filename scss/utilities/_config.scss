@@ -1,0 +1,62 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+
+$font-url--primary: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap';
+$font-family--primary: 'Open Sans', sans-serif;
+
+$font-url--secondary: 'https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap';
+$font-family--secondary: 'Raleway', sans-serif;
+
+// Font Weights
+
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+
+// Descriptive Base Colors
+
+$mirage: #181f2a;
+$ebony-clay: #202a3c;
+$firefly: #0b1523;
+
+// Accent
+$white: #fff;
+$black: #000;
+$coral-red: #ff4242;
+$shakespeare: #339ecc;
+$aquamarine-blue: #65e2d9;
+
+// Color Usage
+
+$color-primary: $mirage;
+$color-secondary: $ebony-clay;
+$color-footer: $firefly;
+$color-body: #1c2431;
+$color-link: rgb(174, 174, 174);
+
+// Text
+
+$base__font-size: 14px;
+$base__line: 24px;
+$text--center: center;
+
+// Border radius
+
+$br--default: 0.4em;
+$br--round: 50%;
+$br--radius: 5px;
+
+// Path to Assets
+
+$path--rel: '../images';
+
+// Gutters
+$gutters: 2em;
+
+// Media queries
+
+$break--s: '(min-width: 600px)';
+$break--m: '(min-width: 768px)';
+$break--l: '(min-width: 1024px)';

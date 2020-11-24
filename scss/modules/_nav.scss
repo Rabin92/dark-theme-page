@@ -1,0 +1,20 @@
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+.nav {
+  margin-top: 10px;
+
+  @media #{$break--s} {
+    margin-top: initial;
+  }
+
+  @include e(item) {
+    @extend %nav-item-disp;
+  }
+
+  @include e(link) {
+    @extend %link;
+    font-weight: 700;
+  }
+}

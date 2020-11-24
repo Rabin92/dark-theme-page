@@ -1,0 +1,23 @@
+// ==========================================================================
+// Button
+// ==========================================================================
+
+.btn {
+  @extend %btn;
+
+  @include m(w) {
+    width: 75%;
+    max-width: em(300px);
+    padding: em(12px);
+    margin-top: 10px;
+    @media #{$break--m} {
+      max-width: em(190px);
+      width: 90%;
+      margin-top: initial;
+    }
+  }
+
+  &:hover {
+    background: $aquamarine-blue;
+  }
+}

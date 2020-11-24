@@ -1,0 +1,47 @@
+// ==========================================================================
+// Placeholders
+// ==========================================================================
+
+// Nav Items
+
+%nav-item-disp {
+  display: inline-block;
+  margin-right: em(20px);
+}
+
+// Buttons
+
+%btn {
+  background-image: linear-gradient(to right, $aquamarine-blue, $shakespeare);
+  padding: em(14px);
+  width: 55%;
+  max-width: em(310px);
+  border-radius: em(30px);
+  // margin-top: em(20px);
+}
+
+%form-input {
+  border-radius: em(30px);
+  width: 75%;
+  max-width: em(300px);
+  padding: em(12px);
+  border: none;
+}
+
+// Card
+
+%card {
+  padding: $gutters;
+  background-color: $color-primary;
+  text-align: $text--center;
+}
+
+// Link
+
+%link {
+  color: $color-link;
+  font-weight: 700;
+  &:hover {
+    color: $white;
+  }
+}

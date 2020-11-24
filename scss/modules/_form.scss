@@ -1,0 +1,54 @@
+// ==========================================================================
+// Form
+// ==========================================================================
+
+.form {
+  position: relative;
+  @include flexy($j-content: center);
+  text-align: $text--center;
+
+  @include e(header) {
+    position: absolute;
+    padding: em(32px);
+    border-radius: em(10px);
+    width: 90%;
+    background-color: $color-body;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    @media #{$break--m} {
+      max-width: 650px;
+    }
+  }
+
+  @include e(body) {
+    margin-top: em(30px);
+    @media #{$break--m} {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: em(15px);
+    }
+  }
+
+  @include e(input) {
+    @extend %form-input;
+    color: $black;
+    &::placeholder {
+      font-size: em(12px);
+      opacity: 0.4;
+    }
+
+    @media #{$break--m} {
+      width: 100%;
+      max-width: initial;
+    }
+  }
+
+  @include e(label) {
+    @include m(hidden) {
+      @extend .srt;
+    }
+  }
+
+  @include e(error) {
+    color: $coral-red;
+  }
+}

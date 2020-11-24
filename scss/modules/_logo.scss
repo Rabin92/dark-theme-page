@@ -1,0 +1,26 @@
+// ==========================================================================
+// Site Logo
+// ==========================================================================
+
+.site-logo {
+  height: 30px;
+  @include m(footer) {
+    height: 50px;
+    padding-left: em(25px);
+  }
+}
+
+.footer {
+  @include e(social-icon) {
+    height: em(25px);
+    fill: $white;
+    border: 1px solid $white;
+    padding: 0.35em;
+    border-radius: $br--round;
+    margin-left: em(10px);
+
+    &:hover {
+      fill: $aquamarine-blue;
+    }
+  }
+}
