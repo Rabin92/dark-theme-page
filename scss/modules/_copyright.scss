@@ -1,0 +1,15 @@
+// ==========================================================================
+// Form
+// ==========================================================================
+
+.copyright {
+  text-align: $text--center;
+  margin-top: em(30px);
+  padding-bottom: em(30px);
+  @include e(link) {
+    color: $aquamarine-blue;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
