@@ -404,6 +404,7 @@ main {
 }
 .intro__description {
   max-width: 350px;
+  padding-bottom: 15px;
 }
 @media (min-width: 768px) {
   .intro {
@@ -513,6 +514,65 @@ main {
   }
 }
 
+.form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form__header {
+  position: absolute;
+  padding: 2.2857142857em;
+  border-radius: 0.7142857143em;
+  width: 90%;
+  background-color: #1c2431;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media (min-width: 768px) {
+  .form__header {
+    max-width: 650px;
+  }
+}
+.form__body {
+  margin-top: 2.1428571429em;
+}
+@media (min-width: 768px) {
+  .form__body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.0714285714em;
+  }
+}
+.form__input {
+  color: #000;
+}
+.form__input::placeholder {
+  font-size: 0.8571428571em;
+  opacity: 0.4;
+}
+@media (min-width: 768px) {
+  .form__input {
+    width: 100%;
+    max-width: initial;
+  }
+}
+.form__error {
+  color: #ff4242;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2.1428571429em;
+  padding-bottom: 2.1428571429em;
+}
+.copyright__link {
+  color: #65e2d9;
+}
+.copyright__link:hover {
+  text-decoration: underline;
+}
+
 .main-footer {
   background-color: #0b1523;
   padding-top: 16.4285714286em;
@@ -559,52 +619,6 @@ main {
   .footer__body {
     margin-top: initial;
   }
-}
-.form {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.form__header {
-  position: absolute;
-  padding: 2.2857142857em;
-  border-radius: 0.7142857143em;
-  width: 90%;
-  background-color: #1c2431;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-@media (min-width: 768px) {
-  .form__header {
-    max-width: 650px;
-  }
-}
-.form__body {
-  margin-top: 2.1428571429em;
-}
-@media (min-width: 768px) {
-  .form__body {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 1.0714285714em;
-  }
-}
-.form__input {
-  color: #000;
-}
-.form__input::placeholder {
-  font-size: 0.8571428571em;
-  opacity: 0.4;
-}
-@media (min-width: 768px) {
-  .form__input {
-    width: 100%;
-    max-width: initial;
-  }
-}
-.form__error {
-  color: #ff4242;
 }
 
 /*# sourceMappingURL=styles.css.map */
